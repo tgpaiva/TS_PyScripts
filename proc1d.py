@@ -1,0 +1,6 @@
+XCMD("ABSF1 1000")
+XCMD("ABSF2 -1000")
+XCMD("lb 0.3")
+EFP()
+APKS()
+ABS()

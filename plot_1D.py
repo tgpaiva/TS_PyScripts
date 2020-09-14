@@ -1,0 +1,8 @@
+curdat = CURDATA()
+str=(curdat[0] +"_" + curdat[1]+"_" + curdat[2])
+out_path=('/Users/Tiago/Desktop/'+str+".pdf")
+PUTPAR("1 LAYOUT","+/TP_1DSpectrum.xwp")
+PUTPAR("F 1P","220")
+PUTPAR("F 2P","0")
+cmd=("autoplot -e" + out_path)
+XCMD(cmd)
