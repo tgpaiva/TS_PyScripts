@@ -1,3 +1,5 @@
+# Converts VClist to a VDlist for CPMG processing
+
 curdat = CURDATA()
 
 d20=GETPAR("D 20")
