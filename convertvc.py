@@ -10,10 +10,7 @@ AQPATH=(curdat[3]+"/"+curdat[0] + "/"+curdat[1]+ "/" + "vclist")
 vclist=open(AQPATH).readlines()
 vclist = list(map(int,vclist))
 
-vdlist=[]
-for i in range (len(vclist)):
-    iterator=mult * vclist[i]
-    vdlist.append(iterator)
+vdlist=[mult * vclist[i] for i in range (len(vclist))]
    
 WPATH=(curdat[3]+"/"+curdat[0] + "/"+curdat[1]+ "/" + "vdlist")
 with open(WPATH, 'w') as f: #gradlist output path
