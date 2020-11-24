@@ -1,11 +1,14 @@
 # plots 1D spectrum according to a layout file 
 # takes default f1p and f2p unless they are specified in the cmd line
 
+from os.path import expanduser
 from sys import argv
 
 curdat = CURDATA()
 
-name=('/Users/Tiago/Desktop/' + curdat[0] +"_" + curdat[1]+"_" + curdat[2] + ".pdf")
+Desktoppath = expanduser('~/Desktop/')
+
+name=(Desktoppath + curdat[0] +"_" + curdat[1]+"_" + curdat[2] + ".pdf")
 
 if len(argv) == 3:
     f1p,f2p = argv[1],argv[2]

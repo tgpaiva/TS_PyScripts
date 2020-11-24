@@ -2,7 +2,7 @@
 
 import subprocess 
 curdat = CURDATA()
-path = (curdat[3] + '/' + curdat[0] + '/'+ curdat[2] + '/' + curdat[1])
+path = (curdat[3] + '/' + curdat[0] + '/')
 
 def copy2clip(txt):
     cmd='echo '+txt.strip()+'|pbcopy'
