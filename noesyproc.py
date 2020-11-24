@@ -1,0 +1,4 @@
+PUTPAR("1 PHC0","90")
+PUTPAR("1 PHC1","-180")
+PUTPAR("1 FCOR","1")
+XFB()
